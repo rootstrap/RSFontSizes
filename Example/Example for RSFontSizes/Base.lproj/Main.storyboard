@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="JHr-hh-YMG">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Raleway-Bold.ttf">
+            <string>Raleway-Bold</string>
+        </array>
+        <array key="Raleway-Regular.ttf">
+            <string>Raleway-Regular</string>
+        </array>
+        <array key="Raleway-Thin.ttf">
+            <string>Raleway-Thin</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="kKb-jT-SVB">
+            <objects>
+                <viewController id="JHr-hh-YMG" customClass="ViewController" customModule="FontSizes_Example" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="VTP-mI-6ZF"/>
+                        <viewControllerLayoutGuide type="bottom" id="BDo-Xh-ihx"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="UIi-0t-80z">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bold Fixed at 20pt" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4WO-wc-qGX">
+                                <rect key="frame" x="101" y="155.5" width="174" height="23.5"/>
+                                <fontDescription key="fontDescription" name="Raleway-Bold" family="Raleway" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Thin Proportional to 3.5in" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ply-Wc-AHy">
+                                <rect key="frame" x="133.5" y="327.5" width="109.5" height="12"/>
+                                <fontDescription key="fontDescription" name="Raleway-Thin" family="Raleway" pointSize="10"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Regular Screen Specific" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Orw-dg-KpQ">
+                                <rect key="frame" x="121.5" y="493.5" width="132" height="14.5"/>
+                                <fontDescription key="fontDescription" name="Raleway-Regular" family="Raleway" pointSize="12"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Model" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a1s-Ss-oKf">
+                                <rect key="frame" x="170" y="647.5" width="35" height="14.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="BDo-Xh-ihx" firstAttribute="top" secondItem="a1s-Ss-oKf" secondAttribute="bottom" constant="5" id="IBe-ht-h8d"/>
+                            <constraint firstItem="4WO-wc-qGX" firstAttribute="centerX" secondItem="UIi-0t-80z" secondAttribute="centerX" id="JO3-ln-2KK"/>
+                            <constraint firstItem="Orw-dg-KpQ" firstAttribute="centerX" secondItem="UIi-0t-80z" secondAttribute="centerX" id="KE6-gR-9LN"/>
+                            <constraint firstItem="Orw-dg-KpQ" firstAttribute="centerY" secondItem="UIi-0t-80z" secondAttribute="centerY" multiplier="1.5" id="Xhs-WF-mdO"/>
+                            <constraint firstItem="Ply-Wc-AHy" firstAttribute="centerX" secondItem="UIi-0t-80z" secondAttribute="centerX" id="ZwU-9o-Unq"/>
+                            <constraint firstItem="4WO-wc-qGX" firstAttribute="centerY" secondItem="UIi-0t-80z" secondAttribute="centerY" multiplier="0.5" id="hXT-fT-aLg"/>
+                            <constraint firstItem="Ply-Wc-AHy" firstAttribute="centerY" secondItem="UIi-0t-80z" secondAttribute="centerY" id="laP-MO-gX9"/>
+                            <constraint firstItem="a1s-Ss-oKf" firstAttribute="centerX" secondItem="UIi-0t-80z" secondAttribute="centerX" id="qbP-Pl-t7p"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="model" destination="a1s-Ss-oKf" id="A4R-iZ-W3R"/>
+                        <outlet property="previewFixed" destination="4WO-wc-qGX" id="VcN-3T-Nx8"/>
+                        <outlet property="previewProportional" destination="Ply-Wc-AHy" id="9Hw-Ch-TxU"/>
+                        <outlet property="previewSpecifics" destination="Orw-dg-KpQ" id="cMc-NH-7ZE"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7sm-tm-y7h" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-124" y="64"/>
+        </scene>
+    </scenes>
+</document>
