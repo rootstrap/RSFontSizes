@@ -18,12 +18,9 @@ import UIKit
 public typealias SizeSpecification = [Size: CGFloat]
 public typealias BaseSize = (Size, CGFloat)
 
-public enum Font: String {
+public class Font {
   static var defaultSize: CGFloat = 12
   internal static var predefined: [UIFontTextStyle: UIFont] = [:]
-    
-  //Custom font families
-  case raleway = "Raleway"
   
   public enum PointSize {
     //Fixed sizes
@@ -101,26 +98,11 @@ public enum Font: String {
     }
   }
   
-  public func withStyle(_ style: Style = .regular, size: PointSize = .normal) -> UIFont? {
-    return self.rawValue.font(withStyle: style, size: size)
-  }
-  
-  public static func with(class style: UIFontTextStyle) -> UIFont? {
-    return predefined[style]
-  }
-  
-  public static func save(font: UIFont?, forClass style: UIFontTextStyle) {
-    predefined[style] = font
-  }
-}
+  //MARK TypeFont Generation
 
-//MARK: Font Helper class
-
-open class FontHelper {
-  
   // Fonts should be added and correctly linked to the project.
   // Note: If there are too many in your project I would recommend FontBlaster pod.
-  class func findFont(for name: String, style: Font.Style) -> String {
+  class func find(family name: String, style: Font.Style) -> String {
     let families = UIFont.familyNames
     guard let family = families.filter({ $0 == name }).first else {
       print("No Font family found with name \(name)")
@@ -144,14 +126,26 @@ open class FontHelper {
       return name
     }
   }
+  
+  //TODO: Add font descriptor generator for multiple styles
+  
+  //MARK Preferences
+  
+  public static func with(class style: UIFontTextStyle) -> UIFont? {
+    return predefined[style]
+  }
+  
+  public static func save(font: UIFont?, forClass style: UIFontTextStyle) {
+    predefined[style] = font
+  }
 }
 
 //MARK: Utility Extensions
 
 extension String {
-  public func font(withStyle style: Font.Style = .regular, size: Font.PointSize = .normal) -> UIFont? {
+  public func with(style: Font.Style = .regular, size: Font.PointSize = .normal) -> UIFont? {
     guard !isEmpty else { return nil }
-    return UIFont(name: FontHelper.findFont(for: self, style: style), size: size.value()) ?? UIFont.systemFont(ofSize: size.value())
+    return UIFont(name: Font.find(family: self, style: style), size: size.value()) ?? UIFont.systemFont(ofSize: size.value())
   }
 }
 
