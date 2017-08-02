@@ -1,6 +1,6 @@
 # RSFontSizes
 
-[![CI Status](http://img.shields.io/travis/jpmazza/RSFontSizes.svg?style=flat)](https://travis-ci.org/toptier/FontSizes)
+[![CI Status](http://img.shields.io/travis/rootstrap/RSFontSizes.svg?style=flat)](https://travis-ci.org/rootstrap/RSFontSizes)
 [![Version](https://img.shields.io/cocoapods/v/RSFontSizes.svg?style=flat)](http://cocoapods.org/pods/FontSizes)
 [![License](https://img.shields.io/cocoapods/l/RSFontSizes.svg?style=flat)](http://cocoapods.org/pods/FontSizes)
 [![Platform](https://img.shields.io/cocoapods/p/RSFontSizes.svg?style=flat)](http://cocoapods.org/pods/FontSizes)

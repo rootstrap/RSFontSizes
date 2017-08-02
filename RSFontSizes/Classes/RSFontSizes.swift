@@ -14,6 +14,7 @@
 
 import Foundation
 import UIKit
+import Device
 
 public typealias SizeSpecification = [Size: CGFloat]
 public typealias BaseSize = (Size, CGFloat)
@@ -154,7 +155,21 @@ extension Size {
   static let current: Size = Device.size()
   
   func proportion(to base: Size) -> CGFloat {
-    return rawValue/base.rawValue
+    return inches()/base.inches()
+  }
+  
+  public func inches() -> CGFloat {
+    switch self {
+    case .screen3_5Inch: return 3.5
+    case .screen4Inch: return 4
+    case .screen4_7Inch: return 4.7
+    case .screen5_5Inch: return 5.5
+    case .screen7_9Inch: return 7.9
+    case .screen9_7Inch: return 9.7
+    case .screen10_5Inch: return 10.5
+    case .screen12_9Inch: return 12.9
+    default: return 12.9
+    }
   }
   
   func closer() -> Size {

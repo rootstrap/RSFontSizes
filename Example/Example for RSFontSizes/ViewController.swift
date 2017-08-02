@@ -8,6 +8,7 @@
 
 import UIKit
 import RSFontSizes
+import Device
 
 class ViewController: UIViewController {
   
@@ -19,7 +20,7 @@ class ViewController: UIViewController {
   override func viewDidLoad() {
     super.viewDidLoad()
     
-    model.text = String(format: "Screen size: %.1f\"", Device.size().rawValue)
+    model.text = String(format: "Screen size: %.1f\"", Device.size().inches())
     
     previewFixed.font = Font.raleway.with(style: .bold, size: .fixed(20))
     previewProportional.font = Font.raleway.with(style: .thin, size: .proportional(to: (.screen3_5Inch, 10)))
