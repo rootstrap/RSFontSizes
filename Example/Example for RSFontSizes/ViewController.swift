@@ -8,6 +8,7 @@
 
 import UIKit
 import RSFontSizes
+import Device
 
 class ViewController: UIViewController {
   
@@ -19,11 +20,11 @@ class ViewController: UIViewController {
   override func viewDidLoad() {
     super.viewDidLoad()
     
-    model.text = String(format: "Screen size: %.1f\"", Device.size().rawValue)
+    model.text = String(format: "Screen size: %.1f\"", Device.size().inches())
     
-    previewFixed.font = Font.raleway.withStyle(.bold, size: .fixed(20))
-    previewProportional.font = Font.raleway.withStyle(.thin, size: .proportional(to: (.screen3_5Inch, 10)))
-    let font = "Raleway".font(withStyle: .regular,
+    previewFixed.font = Font.raleway.with(style: .bold, size: .fixed(20))
+    previewProportional.font = Font.raleway.with(style: .thin, size: .proportional(to: (.screen3_5Inch, 10)))
+    let font = "Raleway".with(style: .regular,
                               size: .specific(with: [.screen4Inch: 12,
                                                      .screen4_7Inch:13.5,
                                                      .screen5_5Inch: 16,
@@ -31,5 +32,10 @@ class ViewController: UIViewController {
     Font.save(font: font, forClass: .body)
     previewSpecifics.font = Font.with(class: .body)
   }
+}
+
+extension Font {
+  //Custom font families
+  static let raleway = "Raleway"
 }
 

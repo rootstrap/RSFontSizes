@@ -1,10 +1,3 @@
-#
-# Be sure to run `pod lib lint RSFontSizes.podspec' to ensure this is a
-# valid spec before submitting.
-#
-# Any lines starting with a # are optional, but their use is encouraged
-# To learn more about a Podspec see http://guides.cocoapods.org/syntax/podspec.html
-#
 
 Pod::Spec.new do |s|
   s.name             = 'RSFontSizes'
@@ -18,15 +11,20 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-  FontSize allows you to easily handle different font sizes for every device screen size in a flexible manner. 
+  RSFontSize allows you to manage different font sizes for every device screen size in a flexible manner.
+  - No more family name and styles typing/guessing every time you use a font.
+  - Flexible size configurations(Fixed, Proportional to screen size and user specific).
+  - Smart size estimation for vague specifications.
+  - Save your font configurations for different UIFontTextStyle(.body, .title, etc).
+
                        DESC
 
-  s.homepage         = 'https://github.com/toptier/RSFontSizes'
-  # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
+  s.homepage         = 'https://github.com/rootstrap/RSFontSizes'
+  s.screenshots     = 'https://github.com/rootstrap/RSFontSizes/blob/master/dynamic-font-sizes.jpg?raw=true'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'German Lopez' => 'german@rootstrap.com' }
-  s.source           = { :git => 'https://github.com/toptier/RSFontSizes.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+  s.source           = { :git => 'https://github.com/rootstrap/RSFontSizes.git', :tag => s.version.to_s }
+  s.social_media_url = 'https://twitter.com/Rootstrap_UY'
 
   s.ios.deployment_target = '8.0'
 
@@ -38,5 +36,5 @@ Pod::Spec.new do |s|
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+  s.dependency 'Device', '~> 3.0.2'
 end
