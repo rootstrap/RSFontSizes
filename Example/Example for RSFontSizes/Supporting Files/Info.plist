@@ -25,12 +25,10 @@
 	<key>UIAppFonts</key>
 	<array>
 		<string>Raleway-Bold.ttf</string>
-		<string>Raleway-Italic.ttf</string>
 		<string>Raleway-Black.ttf</string>
 		<string>Raleway-BlackItalic.ttf</string>
 		<string>Raleway-Thin.ttf</string>
 		<string>Raleway-Regular.ttf</string>
-		<string>Raleway-ExtraBold.ttf</string>
 		<string>Raleway-ExtraLight.ttf</string>
 		<string>Raleway-ExtraBoldItalic.ttf</string>
 		<string>Raleway-Medium.ttf</string>

@@ -1,6 +1,5 @@
 //
-//  FontSizes.swift
-//  FontSizes
+//  RSFontSizes.swift
 //
 //  The MIT License (MIT)
 //
@@ -105,20 +104,20 @@ public class Font {
   // Note: If there are too many in your project I would recommend FontBlaster pod.
   class func find(family name: String, style: Font.Style) -> String {
     let families = UIFont.familyNames
-    guard let family = families.filter({ $0 == name }).first else {
+    guard let family = families.filter({ $0.lowercased() == name.lowercased() }).first else {
       print("No Font family found with name \(name)")
       return name
     }
     
     let fonts = UIFont.fontNames(forFamilyName: family)
     let desired = String(describing: "\(name)-\(style.rawValue)")
-    if let name = fonts.filter({$0 == desired}).first {
+    if let name = fonts.filter({$0.lowercased() == desired.lowercased()}).first {
       return name
     }else {
       //Look for similar font styles according to FontStyle.alternatives:
       for altern in style.alternatives() {
         let similar = String(describing: "\(name)-\(altern.rawValue)")
-        if let alterName = fonts.filter({$0 == similar}).first {
+        if let alterName = fonts.filter({$0.lowercased() == similar.lowercased()}).first {
           print("No Font found with name \(desired). Using \(alterName) instead.")
           return alterName
         }
@@ -153,6 +152,9 @@ extension String {
 extension Size {
   
   static let current: Size = Device.size()
+  public static let all: [Size] = [screen3_5Inch, screen4Inch, screen4_7Inch,
+                                   screen5_5Inch, screen7_9Inch, screen9_7Inch,
+                                   screen10_5Inch, screen12_9Inch]
   
   func proportion(to base: Size) -> CGFloat {
     return inches()/base.inches()
@@ -172,7 +174,7 @@ extension Size {
     }
   }
   
-  func closer() -> Size {
+  public func closer() -> Size {
     switch self {
     case .screen3_5Inch: return .screen4Inch
     case .screen4Inch: return .screen3_5Inch
