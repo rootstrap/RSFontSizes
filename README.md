@@ -13,7 +13,7 @@ RSFontSize allows you to manage different font sizes for every device screen siz
 - Smart size estimation for vague specifications.
 - Save your font configurations for different UIFontTextStyle(.body, .title, etc).
 
-### Quick peak
+### Quick peek
 
 From poorly managed font sizes:
 
@@ -87,7 +87,7 @@ let font = "Raleway".with(style: .bold, size: .fixed(20))
 #### Save your 'templates' to reuse
 
 ```swift
-Font.save(font: someFont, forClass: .title)
+Font.save(font: someFont, forClass: .body)
 ```
 
 And then use it elsewhere:
