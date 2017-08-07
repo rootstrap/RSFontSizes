@@ -11,7 +11,16 @@ RSFontSize allows you to manage different font sizes for every device screen siz
 - No more family name and styles typing/guessing every time you use a font.
 - Flexible size configurations(Fixed, Proportional to screen size and user specific).
 - Smart size estimation for vague specifications.
-- Save your font configurations for different UIFontTextStyle(.body, .title, etc).
+- Save your font configurations for different UIFontTextStyle(.body, .headline, etc).
+
+## Installation
+
+RSFontSizes is available through [CocoaPods](http://cocoapods.org). To install
+it, simply add the following line to your Podfile:
+
+```ruby
+pod "RSFontSizes"
+```
 
 ### Quick peek
 
@@ -32,7 +41,7 @@ Fonts using RSFontSizes.
 
 Just link your font assets to the project. Very detailed guide [here](http://codewithchris.com/common-mistakes-with-adding-custom-fonts-to-your-ios-app/).
 
-If there are too many font files to add, I recommend FontBlaster pod.
+If there are too many font files to add, FontBlaster pod is strongly recommended.
 It's a simple solution to load your assets automatically instead of manually adding every file to the Info.plist.
 
 ### Optionally add your favourite fonts.
@@ -100,14 +109,6 @@ let label.font = Font.with(class: .body)
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
-## Installation
-
-RSFontSizes is available through [CocoaPods](http://cocoapods.org). To install
-it, simply add the following line to your Podfile:
-
-```ruby
-pod "RSFontSizes"
-```
 
 ## Author
 
