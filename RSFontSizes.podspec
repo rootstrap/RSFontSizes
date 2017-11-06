@@ -36,5 +36,5 @@ Pod::Spec.new do |s|
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
-  s.dependency 'Device', '~> 3.0.3’
+  s.dependency 'Device', '~> '3.0.3'
 end
