@@ -125,7 +125,7 @@ class TableOfContentsSpec: QuickSpec {
           let font = self.testFont.with(style: .regular, size: .medium)
           Font.save(font: font, forClass: .headline)
           let saved = Font.with(class: .headline)
-          expect(saved) != nil
+          expect(saved).notTo(beNil())
           expect(saved) == font
         }
       }

@@ -80,6 +80,7 @@ public class Font {
     case extraBold = "ExtraBold"
     case black = "Black"
     case italic = "Italic"
+    case book = "Book"
     
     //Possible similar styles with preferences
     func alternatives() -> [Style] {
@@ -87,6 +88,7 @@ public class Font {
       case .thin: return [.extraLight, .light]
       case .light: return [.thin, .extraLight]
       case .extraLight: return [.thin, .light]
+      case .book: return [.thin]
       case .regular: return [.medium]
       case .medium: return [.regular]
       case .semibold: return []
@@ -99,7 +101,7 @@ public class Font {
   }
   
   //MARK TypeFont Generation
-
+  
   // Fonts should be added and correctly linked to the project.
   // Note: If there are too many in your project I would recommend FontBlaster pod.
   class func find(family name: String, style: Font.Style) -> String {
@@ -153,7 +155,7 @@ extension Size {
   
   static let current: Size = Device.size()
   public static let all: [Size] = [screen3_5Inch, screen4Inch, screen4_7Inch,
-                                   screen5_5Inch, screen7_9Inch, screen9_7Inch,
+                                   screen5_5Inch, screen5_8Inch, screen7_9Inch, screen9_7Inch,
                                    screen10_5Inch, screen12_9Inch]
   
   func proportion(to base: Size) -> CGFloat {
@@ -166,6 +168,7 @@ extension Size {
     case .screen4Inch: return 4
     case .screen4_7Inch: return 4.7
     case .screen5_5Inch: return 5.5
+    case .screen5_8Inch: return 5
     case .screen7_9Inch: return 7.9
     case .screen9_7Inch: return 9.7
     case .screen10_5Inch: return 10.5
@@ -180,6 +183,7 @@ extension Size {
     case .screen4Inch: return .screen3_5Inch
     case .screen4_7Inch: return .screen5_5Inch
     case .screen5_5Inch: return .screen4_7Inch
+    case .screen5_8Inch: return .screen5_5Inch
     case .screen7_9Inch: return .screen9_7Inch
     case .screen9_7Inch: return .screen7_9Inch
     case .screen10_5Inch: return .screen9_7Inch
