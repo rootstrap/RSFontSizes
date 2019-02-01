@@ -1,8 +1,8 @@
 language: swift
 xcode_workspace: Example/RSFontSizes.xcworkspace
 xcode_scheme: RSFontSizes-Example
-osx_image: xcode8.3
-xcode_sdk: iphonesimulator10.3
+osx_image: xcode10.1
+xcode_sdk: iphonesimulator12.1
 install: true
 branches:
   only:
@@ -16,5 +16,5 @@ before_install:
 - gem install cocoapods
 - pod update --project-directory=Example
 script:
-- set -o pipefail && xcodebuild test -enableCodeCoverage YES -workspace Example/RSFontSizes.xcworkspace -scheme RSFontSizes-Example -sdk iphonesimulator10.3 -destination 'platform=iOS Simulator,name=iPhone 7,OS=10.3.1' ONLY_ACTIVE_ARCH=NO | xcpretty
+- set -o pipefail && xcodebuild test -enableCodeCoverage YES -workspace Example/RSFontSizes.xcworkspace -scheme RSFontSizes-Example -sdk iphonesimulator12.1 -destination 'platform=iOS Simulator,name=iPhone XS Max,OS=12.1' ONLY_ACTIVE_ARCH=NO | xcpretty
 - pod lib lint

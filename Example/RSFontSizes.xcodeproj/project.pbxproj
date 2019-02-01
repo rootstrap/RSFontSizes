@@ -233,7 +233,6 @@
 				607FACCD1AFB9204008FA782 /* Frameworks */,
 				607FACCE1AFB9204008FA782 /* Resources */,
 				E17637E20DC4A920025DAAE1 /* [CP] Embed Pods Frameworks */,
-				17B7DABD2298754E549F4FB1 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -253,7 +252,6 @@
 				607FACE21AFB9204008FA782 /* Frameworks */,
 				607FACE31AFB9204008FA782 /* Resources */,
 				8FB56F4217D8FF007E50A161 /* [CP] Embed Pods Frameworks */,
-				12263969FA70092D23D48AA1 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -346,36 +344,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		12263969FA70092D23D48AA1 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RSFontSizes_Tests/Pods-RSFontSizes_Tests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		17B7DABD2298754E549F4FB1 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RSFontSizes_Example/Pods-RSFontSizes_Example-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		2C098B0BB2407A8F70000D38 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -602,7 +570,7 @@
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = com.rootstrap.RSFontSizesExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.2;
 			};
 			name = Debug;
 		};
@@ -617,7 +585,7 @@
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = com.rootstrap.RSFontSizesExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.2;
 			};
 			name = Release;
 		};

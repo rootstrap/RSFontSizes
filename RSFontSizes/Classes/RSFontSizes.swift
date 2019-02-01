@@ -20,7 +20,7 @@ public typealias BaseSize = (Size, CGFloat)
 
 public class Font {
   static var defaultSize: CGFloat = 12
-  internal static var predefined: [UIFontTextStyle: UIFont] = [:]
+  internal static var predefined: [UIFont.TextStyle: UIFont] = [:]
   
   public enum PointSize {
     //Fixed sizes
@@ -133,11 +133,11 @@ public class Font {
   
   //MARK Preferences
   
-  public static func with(class style: UIFontTextStyle) -> UIFont? {
+  public static func with(class style: UIFont.TextStyle) -> UIFont? {
     return predefined[style]
   }
   
-  public static func save(font: UIFont?, forClass style: UIFontTextStyle) {
+  public static func save(font: UIFont?, forClass style: UIFont.TextStyle) {
     predefined[style] = font
   }
 }
@@ -155,7 +155,8 @@ extension Size {
   
   static let current: Size = Device.size()
   public static let all: [Size] = [screen3_5Inch, screen4Inch, screen4_7Inch,
-                                   screen5_5Inch, screen5_8Inch, screen7_9Inch, screen9_7Inch,
+                                   screen5_5Inch, screen5_8Inch, screen6_1Inch,
+                                   screen6_5Inch, screen7_9Inch, screen9_7Inch,
                                    screen10_5Inch, screen12_9Inch]
   
   func proportion(to base: Size) -> CGFloat {
@@ -168,7 +169,9 @@ extension Size {
     case .screen4Inch: return 4
     case .screen4_7Inch: return 4.7
     case .screen5_5Inch: return 5.5
-    case .screen5_8Inch: return 5
+    case .screen5_8Inch: return 5.8
+    case .screen6_1Inch: return 6.1
+    case .screen6_5Inch: return 6.5
     case .screen7_9Inch: return 7.9
     case .screen9_7Inch: return 9.7
     case .screen10_5Inch: return 10.5
@@ -184,6 +187,8 @@ extension Size {
     case .screen4_7Inch: return .screen5_5Inch
     case .screen5_5Inch: return .screen4_7Inch
     case .screen5_8Inch: return .screen5_5Inch
+    case .screen6_1Inch: return .screen5_8Inch
+    case .screen6_5Inch: return .screen6_1Inch
     case .screen7_9Inch: return .screen9_7Inch
     case .screen9_7Inch: return .screen7_9Inch
     case .screen10_5Inch: return .screen9_7Inch
