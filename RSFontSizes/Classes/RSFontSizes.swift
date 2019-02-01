@@ -20,7 +20,7 @@ public typealias BaseSize = (Size, CGFloat)
 
 public class Font {
   static var defaultSize: CGFloat = 12
-  internal static var predefined: [UIFontTextStyle: UIFont] = [:]
+  internal static var predefined: [UIFont.TextStyle: UIFont] = [:]
   
   public enum PointSize {
     //Fixed sizes
@@ -133,11 +133,11 @@ public class Font {
   
   //MARK Preferences
   
-  public static func with(class style: UIFontTextStyle) -> UIFont? {
+  public static func with(class style: UIFont.TextStyle) -> UIFont? {
     return predefined[style]
   }
   
-  public static func save(font: UIFont?, forClass style: UIFontTextStyle) {
+  public static func save(font: UIFont?, forClass style: UIFont.TextStyle) {
     predefined[style] = font
   }
 }
