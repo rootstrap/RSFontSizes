@@ -19,16 +19,19 @@ class ViewController: UIViewController {
   
   override func viewDidLoad() {
     super.viewDidLoad()
+    model.text = String(format: "Screen size: %.1f\"", Device.size().inches)
     
-    model.text = String(format: "Screen size: %.1f\"", Device.size().inches())
-    
-    previewFixed.font = Font.raleway.with(style: .bold, size: .fixed(20))
-    previewProportional.font = Font.raleway.with(style: .thin, size: .proportional(to: (.screen3_5Inch, 10)))
-    let font = "Raleway".with(style: .regular,
+    // Customize any UIFont object
+    previewFixed.font = Font.raleway.mediumSize.bold
+    previewProportional.font = Font.raleway.thin.proportional(to: (.screen3_5Inch, 10))
+    // Create fonts from a String indicating the family name
+    let font = "Raleway".font(withWeight: .regular,
                               size: .specific(with: [.screen4Inch: 12,
                                                      .screen4_7Inch:13.5,
                                                      .screen5_5Inch: 16,
                                                      .screen9_7Inch: 20.2]))
+    
+    // Save UIFont preferences for different UIFont.TextStyle(.body, .headline, .etc)
     Font.save(font: font, forClass: .body)
     previewSpecifics.font = Font.with(class: .body)
   }
@@ -36,6 +39,6 @@ class ViewController: UIViewController {
 
 extension Font {
   //Custom font families
-  static let raleway = "Raleway"
+  static let raleway = "Raleway".font()!
 }
 

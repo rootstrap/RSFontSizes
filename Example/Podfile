@@ -6,7 +6,7 @@ target 'RSFontSizes_Example' do
   target 'RSFontSizes_Tests' do
     inherit! :search_paths
 
-    pod 'Quick', '~> 1.0.0'
-    pod 'Nimble', '~> 7.0.3'
+    pod 'Quick', '~> 2.0.0'
+    pod 'Nimble', '~> 8.0.1'
   end
 end

@@ -44,12 +44,12 @@ Just link your font assets to the project. Very detailed guide [here](http://cod
 If there are too many font files to add, FontBlaster pod is strongly recommended.
 It's a simple solution to load your assets automatically instead of manually adding every file to the Info.plist.
 
-### Optionally add your favourite fonts.
+### Optionally add shortcuts to your favourite fonts.
 
 ```swift
 extension Font {
   //Your Custom font family names
-  static let raleway = "Raleway"
+  static let raleway = "Raleway".font()!
 }
 ```
 
@@ -60,7 +60,7 @@ There are different types to get your fonts correctly sized:
 -Fixed: The consumer sets the font point size or uses one of the provided classes(.small, .medium, etc). 
 
 ```swift
-let font = Font.raleway.with(style: .regular, size: .medium)
+let font = Font.raleway.small
 ```
 
 No magic here :)
@@ -68,7 +68,7 @@ No magic here :)
 -Proportional: The consumer will specify a base font size asociated with a device screen size. 
 
 ```swift
-let font = Font.raleway.with(style: .thin, size: .proportional(to: (.screen3_5Inch, 10)))
+let font = Font.raleway.proportional(to: (.screen3_5Inch, 10))
 ```
 
 The result will be a font resized accordingly for the current device screen size.  
@@ -76,11 +76,10 @@ The result will be a font resized accordingly for the current device screen size
 -Screen Specific: The consumer defines a set of font sizes linked to an specific screen size. 
 
 ```swift
-let font = Font.raleway.with(style: .regular, 
-                             size: .specific(with: [.screen4Inch:12, 
-                                                    .screen4_7Inch: 13.5,
-                                                    .screen5_5Inch: 16,
-                                                    .screen9_7Inch: 20.2]))
+let font = Font.raleway.specific(values: [.screen4Inch:12, 
+                                          .screen4_7Inch: 13.5,
+                                          .screen5_5Inch: 16,
+                                          .screen9_7Inch: 20.2]))
 ```
 
 If a screen size is not specified the library will try to estimate the correct value for the font size.
@@ -90,7 +89,8 @@ If a screen size is not specified the library will try to estimate the correct v
 #### Use a String as the Font family name
 
 ```swift
-let font = "Raleway".with(style: .bold, size: .fixed(20))
+let font = "Raleway".font(withWeight: .bold,
+                          size: .fixed(20))
 ```
 
 #### Save your 'templates' to reuse
