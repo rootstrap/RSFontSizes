@@ -26,7 +26,7 @@ Pod::Spec.new do |s|
   s.source           = { :git => 'https://github.com/rootstrap/RSFontSizes.git', :tag => s.version.to_s }
   s.social_media_url = 'https://www.facebook.com/rootstrap'
 
-  s.swift_version = '4.2'
+  s.swift_version = '5.0'
   s.ios.deployment_target = '8.3'
 
   s.source_files = 'RSFontSizes/Classes/**/*'
