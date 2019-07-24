@@ -24,7 +24,7 @@ Pod::Spec.new do |s|
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'German Lopez' => 'german@rootstrap.com' }
   s.source           = { :git => 'https://github.com/rootstrap/RSFontSizes.git', :tag => s.version.to_s }
-  s.social_media_url = 'https://twitter.com/Rootstrap_UY'
+  s.social_media_url = 'https://www.facebook.com/rootstrap'
 
   s.swift_version = '4.2'
   s.ios.deployment_target = '8.3'
