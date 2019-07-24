@@ -76,7 +76,7 @@ The result will be a font resized accordingly for the current device screen size
 -Screen Specific: The consumer defines a set of font sizes linked to an specific screen size. 
 
 ```swift
-let font = Font.raleway.specific(values: [.screen4Inch:12, 
+let font = Font.raleway.specific(values: [.screen4Inch: 12, 
                                           .screen4_7Inch: 13.5,
                                           .screen5_5Inch: 16,
                                           .screen9_7Inch: 20.2]))
