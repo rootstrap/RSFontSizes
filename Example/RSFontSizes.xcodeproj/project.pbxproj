@@ -292,6 +292,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -369,7 +370,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-RSFontSizes_Tests/Pods-RSFontSizes_Tests-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-RSFontSizes_Tests/Pods-RSFontSizes_Tests-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Nimble/Nimble.framework",
 				"${BUILT_PRODUCTS_DIR}/Quick/Quick.framework",
 			);
@@ -380,7 +381,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RSFontSizes_Tests/Pods-RSFontSizes_Tests-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RSFontSizes_Tests/Pods-RSFontSizes_Tests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		A4DD8DA354C84C52476BF8E4 /* [CP] Check Pods Manifest.lock */ = {
@@ -407,7 +408,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-RSFontSizes_Example/Pods-RSFontSizes_Example-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-RSFontSizes_Example/Pods-RSFontSizes_Example-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Device/Device.framework",
 				"${BUILT_PRODUCTS_DIR}/RSFontSizes/RSFontSizes.framework",
 			);
@@ -418,7 +419,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RSFontSizes_Example/Pods-RSFontSizes_Example-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RSFontSizes_Example/Pods-RSFontSizes_Example-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -572,7 +573,7 @@
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = com.rootstrap.RSFontSizesExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -588,7 +589,7 @@
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = com.rootstrap.RSFontSizesExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -609,7 +610,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RSFontSizes_Example.app/RSFontSizes_Example";
 			};
 			name = Debug;
@@ -626,7 +627,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RSFontSizes_Example.app/RSFontSizes_Example";
 			};
 			name = Release;
