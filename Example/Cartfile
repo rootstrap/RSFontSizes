@@ -1,0 +1,5 @@
+# Development - Change to your local path and branch
+git "file:///Users/toptierlabs/Projects/RSFontSizes" "feature/carthage"
+
+# Release
+# github "rootstrap/RSFontSizes" ~> 1.1.0

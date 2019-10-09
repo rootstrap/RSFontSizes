@@ -29,7 +29,7 @@ Pod::Spec.new do |s|
   s.swift_version = '5.0'
   s.ios.deployment_target = '9.2'
 
-  s.source_files = 'RSFontSizes/Classes/**/*'
+  s.source_files = 'Sources/Classes/**/*'
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
