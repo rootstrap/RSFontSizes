@@ -13,6 +13,7 @@
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
+		8AEF5E3A59661EAEE028B7E1 /* Pods_RSFontSizes_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80D2DDB0674AD76058D7D479 /* Pods_RSFontSizes_Example.framework */; };
 		9B50B4361F2FD3FC0017CEF9 /* Raleway-ExtraLightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9B50B4241F2FD3FC0017CEF9 /* Raleway-ExtraLightItalic.ttf */; };
 		9B50B4371F2FD3FC0017CEF9 /* Raleway-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9B50B4251F2FD3FC0017CEF9 /* Raleway-ThinItalic.ttf */; };
 		9B50B4381F2FD3FC0017CEF9 /* Raleway-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9B50B4261F2FD3FC0017CEF9 /* Raleway-BlackItalic.ttf */; };
@@ -32,8 +33,7 @@
 		9B50B4471F2FD3FC0017CEF9 /* Raleway-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9B50B4351F2FD3FC0017CEF9 /* Raleway-Medium.ttf */; };
 		9B9F3432224E51DB00E729BA /* Raleway-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9B9F3431224E51DB00E729BA /* Raleway-Bold.ttf */; };
 		9B9F3442224E78CC00E729BA /* UIFontExtensionTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B9F3441224E78CC00E729BA /* UIFontExtensionTest.swift */; };
-		DB81398B4BBD7CADF0D50EAF /* Pods_RSFontSizes_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E83B3160BF578878EAA1E5A /* Pods_RSFontSizes_Tests.framework */; };
-		EB0BDBD7D316DC48AC16D74D /* Pods_RSFontSizes_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B911B7466425F43B2BE0805 /* Pods_RSFontSizes_Example.framework */; };
+		CA132B80663E334EABAF53E8 /* Pods_RSFontSizes_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8806D11F21FBB7561F7A65F0 /* Pods_RSFontSizes_Tests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,9 +47,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0B911B7466425F43B2BE0805 /* Pods_RSFontSizes_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RSFontSizes_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		0C70DCBECBD34F4B8F25649C /* Pods-RSFontSizes_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RSFontSizes_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RSFontSizes_Example/Pods-RSFontSizes_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		22C5D37E3CE50F66B72796F6 /* Pods-RSFontSizes_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RSFontSizes_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-RSFontSizes_Tests/Pods-RSFontSizes_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		1F68ECAD04405AA369C9D524 /* Pods-RSFontSizes_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RSFontSizes_Example.debug.xcconfig"; path = "Target Support Files/Pods-RSFontSizes_Example/Pods-RSFontSizes_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		2987D215918ACDF58C6FB865 /* Pods-RSFontSizes_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RSFontSizes_Tests.release.xcconfig"; path = "Target Support Files/Pods-RSFontSizes_Tests/Pods-RSFontSizes_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		434D4F990715FBA38E4EB400 /* Pods-RSFontSizes_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RSFontSizes_Tests.debug.xcconfig"; path = "Target Support Files/Pods-RSFontSizes_Tests/Pods-RSFontSizes_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		59186E006E3006A8EFF83A3D /* RSFontSizes.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = RSFontSizes.podspec; path = ../../RSFontSizes.podspec; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* RSFontSizes_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RSFontSizes_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -61,8 +61,9 @@
 		607FACE51AFB9204008FA782 /* RSFontSizes_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RSFontSizes_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
+		80D2DDB0674AD76058D7D479 /* Pods_RSFontSizes_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RSFontSizes_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8806D11F21FBB7561F7A65F0 /* Pods_RSFontSizes_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RSFontSizes_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B874A1064FA77657DBD2CE8 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../../README.md; sourceTree = "<group>"; };
-		8E83B3160BF578878EAA1E5A /* Pods_RSFontSizes_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RSFontSizes_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B50B4241F2FD3FC0017CEF9 /* Raleway-ExtraLightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-ExtraLightItalic.ttf"; sourceTree = "<group>"; };
 		9B50B4251F2FD3FC0017CEF9 /* Raleway-ThinItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-ThinItalic.ttf"; sourceTree = "<group>"; };
 		9B50B4261F2FD3FC0017CEF9 /* Raleway-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-BlackItalic.ttf"; sourceTree = "<group>"; };
@@ -83,8 +84,7 @@
 		9B9F3431224E51DB00E729BA /* Raleway-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-Bold.ttf"; sourceTree = "<group>"; };
 		9B9F3441224E78CC00E729BA /* UIFontExtensionTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIFontExtensionTest.swift; sourceTree = "<group>"; };
 		9BE18B7AB614FFE339EF87DD /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../../LICENSE; sourceTree = "<group>"; };
-		A084AE7A185040AD8BA140DE /* Pods-RSFontSizes_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RSFontSizes_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RSFontSizes_Tests/Pods-RSFontSizes_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		D993542B653FD888F176073A /* Pods-RSFontSizes_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RSFontSizes_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-RSFontSizes_Example/Pods-RSFontSizes_Example.release.xcconfig"; sourceTree = "<group>"; };
+		A3B5AF9F1347CCB58491DEB6 /* Pods-RSFontSizes_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RSFontSizes_Example.release.xcconfig"; path = "Target Support Files/Pods-RSFontSizes_Example/Pods-RSFontSizes_Example.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,7 +92,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EB0BDBD7D316DC48AC16D74D /* Pods_RSFontSizes_Example.framework in Frameworks */,
+				8AEF5E3A59661EAEE028B7E1 /* Pods_RSFontSizes_Example.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -100,30 +100,21 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DB81398B4BBD7CADF0D50EAF /* Pods_RSFontSizes_Tests.framework in Frameworks */,
+				CA132B80663E334EABAF53E8 /* Pods_RSFontSizes_Tests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		1DBA6C7218C802B3423BD9C0 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				0B911B7466425F43B2BE0805 /* Pods_RSFontSizes_Example.framework */,
-				8E83B3160BF578878EAA1E5A /* Pods_RSFontSizes_Tests.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 		607FACC71AFB9204008FA782 = {
 			isa = PBXGroup;
 			children = (
 				607FACD21AFB9204008FA782 /* Example for RSFontSizes */,
 				607FACD11AFB9204008FA782 /* Products */,
 				607FACE81AFB9204008FA782 /* Tests */,
-				A764AA79CE63DFEABC56BFDF /* Pods */,
-				1DBA6C7218C802B3423BD9C0 /* Frameworks */,
+				B0197A4927CCAD91258FCD69 /* Pods */,
+				EB314D16B78FBD96C4FD1027 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -212,15 +203,25 @@
 			name = "Podspec Metadata";
 			sourceTree = "<group>";
 		};
-		A764AA79CE63DFEABC56BFDF /* Pods */ = {
+		B0197A4927CCAD91258FCD69 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				0C70DCBECBD34F4B8F25649C /* Pods-RSFontSizes_Example.debug.xcconfig */,
-				D993542B653FD888F176073A /* Pods-RSFontSizes_Example.release.xcconfig */,
-				A084AE7A185040AD8BA140DE /* Pods-RSFontSizes_Tests.debug.xcconfig */,
-				22C5D37E3CE50F66B72796F6 /* Pods-RSFontSizes_Tests.release.xcconfig */,
+				1F68ECAD04405AA369C9D524 /* Pods-RSFontSizes_Example.debug.xcconfig */,
+				A3B5AF9F1347CCB58491DEB6 /* Pods-RSFontSizes_Example.release.xcconfig */,
+				434D4F990715FBA38E4EB400 /* Pods-RSFontSizes_Tests.debug.xcconfig */,
+				2987D215918ACDF58C6FB865 /* Pods-RSFontSizes_Tests.release.xcconfig */,
 			);
 			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		EB314D16B78FBD96C4FD1027 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				80D2DDB0674AD76058D7D479 /* Pods_RSFontSizes_Example.framework */,
+				8806D11F21FBB7561F7A65F0 /* Pods_RSFontSizes_Tests.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -230,11 +231,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 607FACEF1AFB9204008FA782 /* Build configuration list for PBXNativeTarget "RSFontSizes_Example" */;
 			buildPhases = (
-				A4DD8DA354C84C52476BF8E4 /* [CP] Check Pods Manifest.lock */,
+				60F8D0D03E006EABA1BF01DC /* [CP] Check Pods Manifest.lock */,
 				607FACCC1AFB9204008FA782 /* Sources */,
 				607FACCD1AFB9204008FA782 /* Frameworks */,
 				607FACCE1AFB9204008FA782 /* Resources */,
-				E17637E20DC4A920025DAAE1 /* [CP] Embed Pods Frameworks */,
+				D291677A53A6A91FF8E16289 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -249,11 +250,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 607FACF21AFB9204008FA782 /* Build configuration list for PBXNativeTarget "RSFontSizes_Tests" */;
 			buildPhases = (
-				2C098B0BB2407A8F70000D38 /* [CP] Check Pods Manifest.lock */,
+				741B922C5C1A6700724B9D7F /* [CP] Check Pods Manifest.lock */,
 				607FACE11AFB9204008FA782 /* Sources */,
 				607FACE21AFB9204008FA782 /* Frameworks */,
 				607FACE31AFB9204008FA782 /* Resources */,
-				8FB56F4217D8FF007E50A161 /* [CP] Embed Pods Frameworks */,
+				997CA47E6D5384D466F7822D /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -287,7 +288,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 607FACCB1AFB9204008FA782 /* Build configuration list for PBXProject "RSFontSizes" */;
+			buildConfigurationList = 607FACCB1AFB9204008FA782 /* Build configuration list for PBXProject "RSFontSizesExample" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -346,16 +347,42 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		2C098B0BB2407A8F70000D38 /* [CP] Check Pods Manifest.lock */ = {
+		60F8D0D03E006EABA1BF01DC /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			inputFileListPaths = (
 			);
 			inputPaths = (
 				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
 				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RSFontSizes_Example-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		741B922C5C1A6700724B9D7F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-RSFontSizes_Tests-checkManifestLockResult.txt",
 			);
@@ -364,7 +391,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		8FB56F4217D8FF007E50A161 /* [CP] Embed Pods Frameworks */ = {
+		997CA47E6D5384D466F7822D /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -384,25 +411,7 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RSFontSizes_Tests/Pods-RSFontSizes_Tests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		A4DD8DA354C84C52476BF8E4 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-RSFontSizes_Example-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		E17637E20DC4A920025DAAE1 /* [CP] Embed Pods Frameworks */ = {
+		D291677A53A6A91FF8E16289 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -564,7 +573,7 @@
 		};
 		607FACF01AFB9204008FA782 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0C70DCBECBD34F4B8F25649C /* Pods-RSFontSizes_Example.debug.xcconfig */;
+			baseConfigurationReference = 1F68ECAD04405AA369C9D524 /* Pods-RSFontSizes_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 2R9P8RBGBJ;
@@ -580,7 +589,7 @@
 		};
 		607FACF11AFB9204008FA782 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D993542B653FD888F176073A /* Pods-RSFontSizes_Example.release.xcconfig */;
+			baseConfigurationReference = A3B5AF9F1347CCB58491DEB6 /* Pods-RSFontSizes_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 2R9P8RBGBJ;
@@ -596,7 +605,7 @@
 		};
 		607FACF31AFB9204008FA782 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A084AE7A185040AD8BA140DE /* Pods-RSFontSizes_Tests.debug.xcconfig */;
+			baseConfigurationReference = 434D4F990715FBA38E4EB400 /* Pods-RSFontSizes_Tests.debug.xcconfig */;
 			buildSettings = {
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
@@ -617,7 +626,7 @@
 		};
 		607FACF41AFB9204008FA782 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 22C5D37E3CE50F66B72796F6 /* Pods-RSFontSizes_Tests.release.xcconfig */;
+			baseConfigurationReference = 2987D215918ACDF58C6FB865 /* Pods-RSFontSizes_Tests.release.xcconfig */;
 			buildSettings = {
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
@@ -635,7 +644,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		607FACCB1AFB9204008FA782 /* Build configuration list for PBXProject "RSFontSizes" */ = {
+		607FACCB1AFB9204008FA782 /* Build configuration list for PBXProject "RSFontSizesExample" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				607FACED1AFB9204008FA782 /* Debug */,
