@@ -1,7 +1,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'RSFontSizes'
-  s.version          = '1.1.0'
+  s.version          = '1.2.0'
   s.summary          = 'Easily manage your font styles and sizes for every screen size.'
 
 # This description is used to generate tags and improve search results.
@@ -27,7 +27,7 @@ Pod::Spec.new do |s|
   s.social_media_url = 'https://www.facebook.com/rootstrap'
 
   s.swift_version = '5.0'
-  s.ios.deployment_target = '8.3'
+  s.ios.deployment_target = '10'
 
   s.source_files = 'Sources/Classes/**/*'
 
