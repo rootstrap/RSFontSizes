@@ -7,13 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		9BAF8F5A234E6B1B001D8701 /* RSFontSizes.h in Headers */ = {isa = PBXBuildFile; fileRef = 9BAF8F58234E6B1B001D8701 /* RSFontSizes.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9B0A60EE24C0EBD000812410 /* Device.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B760782234E89A400CB7C0E /* Device.framework */; };
+		9BAF8F6B234E6BA6001D8701 /* RSFontSizes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BAF8F63234E6BA6001D8701 /* RSFontSizes.swift */; };
+		9BAF8F6C234E6BA6001D8701 /* PointSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BAF8F64234E6BA6001D8701 /* PointSize.swift */; };
+		9BAF8F6D234E6BA6001D8701 /* SizeExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BAF8F65234E6BA6001D8701 /* SizeExtension.swift */; };
+		9BAF8F6E234E6BA6001D8701 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BAF8F66234E6BA6001D8701 /* StringExtension.swift */; };
+		9BAF8F6F234E6BA6001D8701 /* UIFontExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BAF8F67234E6BA6001D8701 /* UIFontExtensions.swift */; };
+		9BAF8F72234E6C81001D8701 /* RSFontSizes.swift in Resources */ = {isa = PBXBuildFile; fileRef = 9BAF8F63234E6BA6001D8701 /* RSFontSizes.swift */; };
+		9BAF8F73234E6C81001D8701 /* PointSize.swift in Resources */ = {isa = PBXBuildFile; fileRef = 9BAF8F64234E6BA6001D8701 /* PointSize.swift */; };
+		9BAF8F74234E6C81001D8701 /* SizeExtension.swift in Resources */ = {isa = PBXBuildFile; fileRef = 9BAF8F65234E6BA6001D8701 /* SizeExtension.swift */; };
+		9BAF8F75234E6C81001D8701 /* StringExtension.swift in Resources */ = {isa = PBXBuildFile; fileRef = 9BAF8F66234E6BA6001D8701 /* StringExtension.swift */; };
+		9BAF8F76234E6C81001D8701 /* UIFontExtensions.swift in Resources */ = {isa = PBXBuildFile; fileRef = 9BAF8F67234E6BA6001D8701 /* UIFontExtensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9B760782234E89A400CB7C0E /* Device.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Device.framework; path = Carthage/Build/iOS/Device.framework; sourceTree = "<group>"; };
 		9BAF8F55234E6B1B001D8701 /* RSFontSizes.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RSFontSizes.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		9BAF8F58234E6B1B001D8701 /* RSFontSizes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RSFontSizes.h; sourceTree = "<group>"; };
-		9BAF8F59234E6B1B001D8701 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9BAF8F62234E6BA6001D8701 /* .gitkeep */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
+		9BAF8F63234E6BA6001D8701 /* RSFontSizes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RSFontSizes.swift; sourceTree = "<group>"; };
+		9BAF8F64234E6BA6001D8701 /* PointSize.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PointSize.swift; sourceTree = "<group>"; };
+		9BAF8F65234E6BA6001D8701 /* SizeExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SizeExtension.swift; sourceTree = "<group>"; };
+		9BAF8F66234E6BA6001D8701 /* StringExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
+		9BAF8F67234E6BA6001D8701 /* UIFontExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIFontExtensions.swift; sourceTree = "<group>"; };
+		9BAF8F69234E6BA6001D8701 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -21,17 +37,27 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9B0A60EE24C0EBD000812410 /* Device.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9B760781234E89A400CB7C0E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9B760782234E89A400CB7C0E /* Device.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		9BAF8F4B234E6B1B001D8701 = {
 			isa = PBXGroup;
 			children = (
-				9BAF8F57234E6B1B001D8701 /* RSFontSizes */,
+				9BAF8F60234E6BA6001D8701 /* Sources */,
 				9BAF8F56234E6B1B001D8701 /* Products */,
+				9B760781234E89A400CB7C0E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -43,13 +69,26 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		9BAF8F57234E6B1B001D8701 /* RSFontSizes */ = {
+		9BAF8F60234E6BA6001D8701 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				9BAF8F58234E6B1B001D8701 /* RSFontSizes.h */,
-				9BAF8F59234E6B1B001D8701 /* Info.plist */,
+				9BAF8F61234E6BA6001D8701 /* Classes */,
+				9BAF8F69234E6BA6001D8701 /* Info.plist */,
 			);
-			path = RSFontSizes;
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		9BAF8F61234E6BA6001D8701 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				9BAF8F62234E6BA6001D8701 /* .gitkeep */,
+				9BAF8F63234E6BA6001D8701 /* RSFontSizes.swift */,
+				9BAF8F64234E6BA6001D8701 /* PointSize.swift */,
+				9BAF8F65234E6BA6001D8701 /* SizeExtension.swift */,
+				9BAF8F66234E6BA6001D8701 /* StringExtension.swift */,
+				9BAF8F67234E6BA6001D8701 /* UIFontExtensions.swift */,
+			);
+			path = Classes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -59,7 +98,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9BAF8F5A234E6B1B001D8701 /* RSFontSizes.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -120,6 +158,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9BAF8F72234E6C81001D8701 /* RSFontSizes.swift in Resources */,
+				9BAF8F73234E6C81001D8701 /* PointSize.swift in Resources */,
+				9BAF8F74234E6C81001D8701 /* SizeExtension.swift in Resources */,
+				9BAF8F75234E6C81001D8701 /* StringExtension.swift in Resources */,
+				9BAF8F76234E6C81001D8701 /* UIFontExtensions.swift in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -130,6 +173,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9BAF8F6E234E6BA6001D8701 /* StringExtension.swift in Sources */,
+				9BAF8F6B234E6BA6001D8701 /* RSFontSizes.swift in Sources */,
+				9BAF8F6F234E6BA6001D8701 /* UIFontExtensions.swift in Sources */,
+				9BAF8F6C234E6BA6001D8701 /* PointSize.swift in Sources */,
+				9BAF8F6D234E6BA6001D8701 /* SizeExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -268,16 +316,24 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = RSFontSizes/Info.plist;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = Sources/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.2.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.rootstrap.RSFontSizes;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
+				SWIFT_INSTALL_OBJC_HEADER = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -293,16 +349,24 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = RSFontSizes/Info.plist;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = Sources/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.2.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.rootstrap.RSFontSizes;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
+				SWIFT_INSTALL_OBJC_HEADER = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

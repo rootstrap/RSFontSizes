@@ -32,14 +32,7 @@ pod "RSFontSizes"
 1. Add the following sources to your Cartfile:
 
 ```
-github "rootstrap/RSFontSizes" ~> 1.1.0
-```
-
-~~`github "Ekhoo/Device" ~> 3.1.2`~~
-
-**Update**: Add the Device dependency using this fork until the proposed fix is merged into the original repo.
-```
-github "glm4/Device" "fix/unsupported_swift_version"
+github "rootstrap/RSFontSizes" ~> 1.2.0
 ```
 
 2. Run the `carthage update` command in the terminal.
