@@ -1,6 +1,7 @@
 use_frameworks!
 
 target 'RSFontSizes_Example' do
+  platform :ios, '9.2'
   pod 'RSFontSizes', :path => '../'
 
   target 'RSFontSizes_Tests' do
@@ -8,5 +9,13 @@ target 'RSFontSizes_Example' do
 
     pod 'Quick', '~> 2.0.0'
     pod 'Nimble', '~> 8.0.1'
+  end
+  
+  post_install do |lib|
+    lib.pods_project.targets.each do |target|
+      target.build_configurations.each do |config|
+        config.build_settings.delete 'IPHONEOS_DEPLOYMENT_TARGET'
+      end
+    end
   end
 end
