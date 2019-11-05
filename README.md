@@ -110,10 +110,12 @@ let label.font = Font.with(class: .body)
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
 
-## Author
+## Credits
 
-Rootstrap Inc., german@rootstrap.com
+**RSFontSizes** is maintained by [Rootstrap](http://www.rootstrap.com) and [German López](https://github.com/glm4) with the help of our [contributors](https://github.com/rootstrap/RSFontSizes/contributors).
 
 ## License
 
 RSFontSizes is available under the MIT license. See the LICENSE file for more info.
+
+[<img src="https://s3-us-west-1.amazonaws.com/rootstrap.com/img/rs.png" width="100"/>](http://www.rootstrap.com)
