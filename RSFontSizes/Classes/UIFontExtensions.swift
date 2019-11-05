@@ -80,6 +80,31 @@ public extension UIFont {
   func proportional(to base: BaseSize) -> UIFont { return sized(.proportional(to: base)) }
 }
 
+@available(iOS 11.0, *)
+public extension UIFont {
+  func dinamicallySized(forStyle style: UIFont.TextStyle) -> UIFont {
+    let metrics = UIFontMetrics(forTextStyle: style)
+    return metrics.scaledFont(for: self)
+  }
+  
+  @available(iOS 11.0, *)
+  func dinamicallySized(forSize pointSize: PointSize) -> UIFont {
+    return dinamicallySized(forStyle: pointSize.fontStyle)
+  }
+  
+  var body: UIFont { return dinamicallySized(forStyle: .body) }
+  var largeTitle: UIFont { return dinamicallySized(forStyle: .largeTitle) }
+  var title1: UIFont { return dinamicallySized(forStyle: .title1) }
+  var title2: UIFont { return dinamicallySized(forStyle: .title2) }
+  var title3: UIFont { return dinamicallySized(forStyle: .title3) }
+  var headline: UIFont { return dinamicallySized(forStyle: .headline) }
+  var subheadline: UIFont { return dinamicallySized(forStyle: .subheadline) }
+  var callout: UIFont { return dinamicallySized(forStyle: .callout) }
+  var footnote: UIFont { return dinamicallySized(forStyle: .footnote) }
+  var caption1: UIFont { return dinamicallySized(forStyle: .caption1) }
+  var caption2: UIFont { return dinamicallySized(forStyle: .caption2) }
+}
+
 public extension UIFont.Weight {
   private static let equatableDiff: CGFloat = 0.0001
   static let extraLight = UIFont.Weight(rawValue: UIFont.Weight.ultraLight.rawValue + equatableDiff)

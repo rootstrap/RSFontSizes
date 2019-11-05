@@ -27,7 +27,7 @@ Pod::Spec.new do |s|
   s.social_media_url = 'https://www.facebook.com/rootstrap'
 
   s.swift_version = '5.0'
-  s.ios.deployment_target = '8.3'
+  s.ios.deployment_target = '9.2'
 
   s.source_files = 'RSFontSizes/Classes/**/*'
 

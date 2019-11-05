@@ -34,6 +34,13 @@ class ViewController: UIViewController {
     // Save UIFont preferences for different UIFont.TextStyle(.body, .headline, .etc)
     Font.save(font: font, forClass: .body)
     previewSpecifics.font = Font.with(class: .body)
+    
+    //Dynamic Type
+    if #available(iOS 11.0, *) {
+      // Size is adjusted when the user preferences change in Settings.
+      previewFixed.adjustsFontForContentSizeCategory = true
+      previewFixed.font = Font.raleway.headline
+    }
   }
 }
 

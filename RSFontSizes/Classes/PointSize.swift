@@ -52,4 +52,23 @@ public enum PointSize {
       return base.value * Size.current.proportion(to: base.key)
     }
   }
+  
+  //TODO: calculate most accurate style for fixed, proportional and specific
+  // point sizes.
+  var fontStyle: UIFont.TextStyle {
+    switch self {
+    case .tiny: return .footnote
+    case .small: return .caption1
+    case .normal, .fixed: return .body
+    case .medium: return .subheadline
+    case .big: return .headline
+    case .huge, .enormous:
+      if #available(iOS 11.0, *) {
+        return .largeTitle
+      } else {
+        return .title1
+      }
+    default: return .body
+    }
+  }
 }
