@@ -1,9 +1,12 @@
 # RSFontSizes
 
 [![CI Status](http://img.shields.io/travis/rootstrap/RSFontSizes.svg?style=flat&colorA=000000)](https://travis-ci.org/rootstrap/RSFontSizes)
+[![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat&colorA=000000)](https://github.com/Carthage/Carthage)
 [![Version](https://img.shields.io/cocoapods/v/RSFontSizes.svg?style=flat&colorA=000000)](http://cocoapods.org/pods/RSFontSizes)
 [![License](https://img.shields.io/cocoapods/l/RSFontSizes.svg?style=flat&colorA=000000)](http://cocoapods.org/pods/RSFontSizes)
 [![Platform](https://img.shields.io/cocoapods/p/RSFontSizes.svg?style=flat&colorA=000000)](http://cocoapods.org/pods/RSFontSizes)
+
+
 
 ## What is it?
 
@@ -15,12 +18,27 @@ RSFontSize allows you to manage different font sizes for every device screen siz
 
 ## Installation
 
+### Cocoapods
+
 RSFontSizes is available through [CocoaPods](http://cocoapods.org). To install
 it, simply add the following line to your Podfile:
 
 ```ruby
 pod "RSFontSizes"
 ```
+
+### Carthage
+
+1. Add the following sources to your Cartfile:
+
+```
+github "rootstrap/RSFontSizes" ~> 1.2.0
+```
+
+2. Run the `carthage update` command in the terminal.
+
+3. Link the resulting RSFontSizes.framework and Device.framework to your project.
+
 
 ### Quick peek
 

@@ -6,6 +6,7 @@
 //
 
 import Device
+import UIKit
 
 public enum PointSize {
   //Predefined sizes
