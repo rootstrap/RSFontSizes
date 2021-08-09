@@ -18,7 +18,7 @@ extension Size {
                                    screen12_9Inch]
   
   func proportion(to base: Size) -> CGFloat {
-    guard base.inches > 0 else { return 1}
+    guard base.inches > 0 else { return 1 }
 
     return inches/base.inches
   }
