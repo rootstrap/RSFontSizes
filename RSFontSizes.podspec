@@ -1,7 +1,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'RSFontSizes'
-  s.version          = '1.2.0'
+  s.version          = '1.3.0'
   s.summary          = 'Easily manage your font styles and sizes for every screen size.'
 
 # This description is used to generate tags and improve search results.
@@ -33,5 +33,5 @@ Pod::Spec.new do |s|
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
-  s.dependency 'Device', '~> 3.1.2'
+  s.dependency 'Device', '~> 3.3.0'
 end
