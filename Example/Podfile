@@ -1,7 +1,7 @@
 use_frameworks!
 
 target 'RSFontSizes_Example' do
-  platform :ios, '9.2'
+  platform :ios, '10.0'
   pod 'RSFontSizes', :path => '../'
 
   target 'RSFontSizes_Tests' do
