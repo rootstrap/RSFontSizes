@@ -5,6 +5,7 @@ import PackageDescription
 
 let package = Package(
     name: "RSFontSizes",
+    platforms: [.iOS(.v12)],
     products: [
         .library(
             name: "RSFontSizes",
@@ -12,7 +13,7 @@ let package = Package(
         )
     ],
     dependencies: [
-        .package(url: "https://github.com/Ekhoo/Device.git", from: "3.3.0")
+        .package(url: "https://github.com/Ekhoo/Device.git", from: "3.4.0")
     ],
     targets: [
         .target(
