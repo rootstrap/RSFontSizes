@@ -8,7 +8,6 @@
 import Foundation
 import UIKit
 
-@available(iOS 8.2, *)
 extension String {
   public func font(withWeight weight: UIFont.Weight = .regular,
                    size: PointSize = .normal) -> UIFont? {
