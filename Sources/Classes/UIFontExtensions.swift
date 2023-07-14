@@ -7,7 +7,6 @@
 
 import UIKit
 
-@available(iOS 8.2, *)
 public extension UIFont {
   convenience init(familyName: String,
                    weight: UIFont.Weight,

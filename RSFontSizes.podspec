@@ -27,11 +27,11 @@ Pod::Spec.new do |s|
   s.social_media_url = 'https://www.facebook.com/rootstrap'
 
   s.swift_version = '5.0'
-  s.ios.deployment_target = '10'
+  s.ios.deployment_target = '12'
 
   s.source_files = 'Sources/Classes/**/*'
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
-  s.dependency 'Device', '~> 3.2.1'
+  s.dependency 'Device', '~> 3.4.0'
 end

@@ -18,6 +18,19 @@ RSFontSize allows you to manage different font sizes for every device screen siz
 
 ## Installation
 
+### Swift Package Manager
+
+```
+https://github.com/rootstrap/RSFontSizes
+```
+
+- In XCode 11, go to File -> Swift Packages -> Add Package Dependency.
+- Enter the repo URL (https://github.com/rootstrap/RSFontSizes) and click Next.
+- Select the version rule desired (you can specify a version number, branch, or commit) and click Next.
+- Finally, select the target where you want to use the framework.
+
+**Note:** It is always recommended to lock your external libraries to a specific version.
+
 ### Cocoapods
 
 RSFontSizes is available through [CocoaPods](http://cocoapods.org). To install
@@ -32,7 +45,7 @@ pod "RSFontSizes"
 1. Add the following sources to your Cartfile:
 
 ```
-github "rootstrap/RSFontSizes" ~> 1.2.0
+github "rootstrap/RSFontSizes" ~> 1.3.0
 ```
 
 2. Run the `carthage update` command in the terminal.

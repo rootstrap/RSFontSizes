@@ -1,7 +1,7 @@
 use_frameworks!
 
 target 'RSFontSizes_Example' do
-  platform :ios, '9.2'
+  platform :ios, '12.0'
   pod 'RSFontSizes', :path => '../'
 
   target 'RSFontSizes_Tests' do
@@ -14,8 +14,9 @@ target 'RSFontSizes_Example' do
   post_install do |lib|
     lib.pods_project.targets.each do |target|
       target.build_configurations.each do |config|
-        config.build_settings.delete 'IPHONEOS_DEPLOYMENT_TARGET'
+        config.build_settings['IPHONEOS_DEPLOYMENT_TARGET'] = '12.0'
       end
     end
   end
+  
 end
