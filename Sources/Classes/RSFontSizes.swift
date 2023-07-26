@@ -22,7 +22,7 @@ public class Font {
   static var defaultSize: CGFloat = 12
   internal static var predefined: [UIFont.TextStyle: UIFont] = [:]
   
-  class func with(familyName name: String,
+  public class func with(familyName name: String,
                   weight: UIFont.Weight,
                   size: PointSize) -> UIFont {
     return UIFont(familyName: name, weight: weight, size: size)
