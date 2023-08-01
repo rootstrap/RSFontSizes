@@ -23,7 +23,7 @@ public enum PointSize {
   case specific(with: SizeSpecification)
   case proportional(to: BaseSize)
   
-  var value: CGFloat {
+  public var value: CGFloat {
     switch self {
     case .tiny: return 8
     case .small: return 12
@@ -33,11 +33,11 @@ public enum PointSize {
     case .huge: return 32
     case .enormous: return 40
     case .fixed(let value): return value
-      
+
     //Calculates proportional font sizes from a base size in the given screen size
     case .proportional(let baseSize):
       return baseSize.1 * Size.current.proportion(to: baseSize.0)
-      
+
       //Returns the correct font size from the consumer specifics
       //If no specification found for the current screen size the estimated font size is:
       //The consumer specification for the closer screen size

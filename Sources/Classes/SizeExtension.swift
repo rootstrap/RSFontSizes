@@ -11,11 +11,11 @@ import Device
 
 extension Size {
   static let current: Size = Device.size()
-  public static let all: [Size] = [screen3_5Inch, screen4Inch, screen4_7Inch,
-                                   screen5_5Inch, screen5_8Inch, screen6_1Inch,
-                                   screen6_5Inch, screen7_9Inch, screen9_7Inch,
+  public static let all: [Size] = [.screen3_5Inch, .screen4Inch, .screen4_7Inch,
+                                   .screen5_5Inch, .screen5_8Inch, .screen6_1Inch,
+                                   .screen6_5Inch, .screen7_9Inch, .screen9_7Inch,
                                    .screen10_2Inch, .screen10_5Inch, .screen11Inch,
-                                   screen12_9Inch]
+                                   .screen12_9Inch]
   
   func proportion(to base: Size) -> CGFloat {
     guard base.inches > 0 else { return 1 }
