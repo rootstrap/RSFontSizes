@@ -45,7 +45,7 @@ pod "RSFontSizes"
 1. Add the following sources to your Cartfile:
 
 ```
-github "rootstrap/RSFontSizes" ~> 1.3.4
+github "rootstrap/RSFontSizes" ~> 1.3.3
 ```
 
 2. Run the `carthage update` command in the terminal.
